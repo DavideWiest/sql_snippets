@@ -16,7 +16,10 @@ SET column1 = "Hello", column2 = "World";
 -- = is equals
 -- <, >, <=, >=
 
-
+ALTER TABLE table2
+ADD FOREIGN KEY(foreign_table_id)
+REFERENCES foreign_table(foreign_id)
+ON DELETE SET NULL;
 
 
 
