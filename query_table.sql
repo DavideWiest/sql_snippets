@@ -18,4 +18,5 @@ WHERE column3 = "Hi";
 SELECT column1, column2 
 FROM table_name;
 
-
+SELECT column1 AS somethingelse, column2 AS othername
+FROM table_name;
