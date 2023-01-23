@@ -15,6 +15,7 @@ LIMIT 2
 WHERE column3 = "Hi";
 -- where conditional
 
-
+SELECT column1, column2 
+FROM table_name;
 
 
