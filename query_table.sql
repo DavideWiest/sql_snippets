@@ -42,3 +42,17 @@ FROM table_name
 GROUP BY class;
 -- table with classes and counts
 
+-- wildcard
+SELECT COUNT(class), class
+FROM table_name
+WHERE class LIKE "pattern";
+-- % = any length of characters
+-- _ = 1 character
+-- works with dates too
+
+SELECT column1, column2 
+FROM table_name
+UNION
+SELECT column1, column2
+FROM other_table;
+
