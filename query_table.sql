@@ -30,3 +30,15 @@ FROM table_name
 -- null does not count
 WHERE date_column > "1989-01-01";
 -- date as string, comparison possible
+
+SELECT AVG(num_column)
+FROM table_name;
+
+SELECT SUM(num_column)
+FROM table_name;
+
+SELECT COUNT(class), class
+FROM table_name
+GROUP BY class;
+-- table with classes and counts
+
