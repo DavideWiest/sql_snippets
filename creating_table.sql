@@ -5,7 +5,7 @@ CREATE TABLE table_name (
     column3 VARCHAR(2) DEFAULT "Hi",
     column4 INT DEFAULT 0,
     column5 DATE,
-    column6 INT REFERENCES foreign_table(foreign_key)
+    column6 INT REFERENCES foreign_table(foreign_key) ON DELETE CASCADE
 );
 
 -- primary key == not null and unique
