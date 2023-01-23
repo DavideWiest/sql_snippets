@@ -24,5 +24,7 @@ FROM table_name;
 SELECT DISTINCT column1
 FROM table_name;
 
-
+SELECT COUNT(id)
+FROM table_name;
+-- num of entries because id is unique
 
