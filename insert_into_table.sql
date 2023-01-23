@@ -5,6 +5,7 @@ INSERT INTO table_name(id, column1) VALUES(1, "column1"); -- column2 will be NUL
 
 INSERT INTO table_name(column1) VALUES("column1"); -- works if id will be auto-incremented
 
+-- foreign key = NULL if doesnt exist yet
 
 
 
