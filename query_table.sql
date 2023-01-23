@@ -55,4 +55,40 @@ FROM table_name
 UNION
 SELECT column1, column2
 FROM other_table;
+-- must be same column number
+-- must be same datatype
+-- column will be called like first column of union statement
+
+SELECT table_name.column1, table_name.column2, other_table.column1 -- fields
+FROM table_name -- table1 
+JOIN other_table -- table2, inner join = condition is met for both
+ON table_name.column1 = other_table.column1; -- condition on entries are joined
+-- unknown values will be filled with NULL
+
+LEFT JOIN other_table -- left join
+RIGHT JOIN other_table -- right join
+OUTER JOIN other_table -- outer join, or full ?
+
+-- nested queries
+SELECT table_name.column1, table_name.column2
+FROM table_name
+WHERE table_name.column3 IN (
+    SELECT other_table.column1
+    WHERE other_table.column1 < 100
+);
+-- IN (,,,) keyword
+
+SELECT table_name.column1, table_name.column2
+FROM table_name
+WHERE table_name.column3 = (
+    SELECT other_table.column1
+    WHERE other_table.column1 = 100
+    LIMIT 1
+);
+
+
+
+
+
+
 

@@ -21,6 +21,7 @@ ADD FOREIGN KEY(foreign_table_id)
 REFERENCES foreign_table(foreign_id)
 ON DELETE SET NULL;
 
-
+DELETE FROM table_name
+WHERE entry_id = 1;
 
 
