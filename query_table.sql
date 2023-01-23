@@ -25,6 +25,8 @@ SELECT DISTINCT column1
 FROM table_name;
 
 SELECT COUNT(id)
-FROM table_name;
+FROM table_name
 -- num of entries because id is unique
-
+-- null does not count
+WHERE date_column > "1989-01-01";
+-- date as string, comparison possible
